@@ -43,9 +43,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="switch"/>
                                 <connections>
-                                    <segue destination="PpP-VL-pbc" kind="show" id="QQm-F1-JJN"/>
+                                    <segue destination="PpP-VL-pbc" kind="show" identifier="changeCity" id="QQm-F1-JJN"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tMq-lH-E7p">
+                                <rect key="frame" x="307" y="410" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="℉/℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAl-3w-4Eh">
+                                <rect key="frame" x="257" y="415" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="13.043478260869566" y="91.741071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--City View Controller-->
         <scene sceneID="0v8-eA-VFk">
             <objects>
-                <viewController id="PpP-VL-pbc" sceneMemberID="viewController">
+                <viewController id="PpP-VL-pbc" customClass="CityViewController" customModule="Weathr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6QG-en-9Da">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,12 +109,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0249446407" green="0.31847792860000002" blue="0.48056417699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Get weather data"/>
+                                <connections>
+                                    <action selector="getWeatherDataPressed:" destination="PpP-VL-pbc" eventType="touchUpInside" id="bXB-fP-lre"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aqW-7S-1zv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="RVH-Di-7QY"/>
+                    <connections>
+                        <outlet property="cityTextField" destination="OVf-8N-i7i" id="o5c-wM-m0v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Hl-aF-4lc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

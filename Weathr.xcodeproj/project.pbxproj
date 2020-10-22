@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B251311F9F414CE5F0D946B /* Pods_Weathr_WeathrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73E0590ADA5482CFAD9A2E6 /* Pods_Weathr_WeathrUITests.framework */; };
 		828529A0253859D500C59992 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285299F253859D500C59992 /* WeatherDataModel.swift */; };
+		82C4DC4625419D98001C2672 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C4DC4525419D98001C2672 /* CityViewController.swift */; };
 		82EC335F25344E0000A38077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC335E25344E0000A38077 /* AppDelegate.swift */; };
 		82EC336125344E0000A38077 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC336025344E0000A38077 /* SceneDelegate.swift */; };
 		82EC336325344E0000A38077 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EC336225344E0000A38077 /* WeatherViewController.swift */; };
@@ -44,6 +45,7 @@
 		39806B68E9670D60E8435800 /* Pods-WeathrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeathrTests.debug.xcconfig"; path = "Target Support Files/Pods-WeathrTests/Pods-WeathrTests.debug.xcconfig"; sourceTree = "<group>"; };
 		758FB0279EBC2028839186E5 /* Pods-Weathr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weathr.release.xcconfig"; path = "Target Support Files/Pods-Weathr/Pods-Weathr.release.xcconfig"; sourceTree = "<group>"; };
 		8285299F253859D500C59992 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		82C4DC4525419D98001C2672 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		82EC335B25344E0000A38077 /* Weathr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weathr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EC335E25344E0000A38077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82EC336025344E0000A38077 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				82EC336925344E0100A38077 /* LaunchScreen.storyboard */,
 				82EC336C25344E0100A38077 /* Info.plist */,
 				8285299F253859D500C59992 /* WeatherDataModel.swift */,
+				82C4DC4525419D98001C2672 /* CityViewController.swift */,
 			);
 			path = Weathr;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				828529A0253859D500C59992 /* WeatherDataModel.swift in Sources */,
+				82C4DC4625419D98001C2672 /* CityViewController.swift in Sources */,
 				82EC336325344E0000A38077 /* WeatherViewController.swift in Sources */,
 				82EC335F25344E0000A38077 /* AppDelegate.swift in Sources */,
 				82EC336125344E0000A38077 /* SceneDelegate.swift in Sources */,
