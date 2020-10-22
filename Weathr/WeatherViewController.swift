@@ -15,7 +15,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     
     
     let WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
-    let APP_ID = "02d9adb8f1aa11e348f63492ce5e6ae4"
+    let APP_ID = ""
 
     
     @IBOutlet weak var temperatureLabel: UILabel!
